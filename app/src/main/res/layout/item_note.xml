@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="text"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/footerHorizontalLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_light_gray"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/blocNote"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:padding="8dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/footerHorizontalLine">
+
+
+            <ImageView
+                android:id="@+id/imageNote"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:maxWidth="65dp"
+                android:maxHeight="65dp"
+                android:src="@drawable/ic_file_blue"
+                app:layout_constraintBottom_toBottomOf="@id/blocNote"
+                app:layout_constraintStart_toStartOf="@id/blocNote"
+                app:layout_constraintTop_toTopOf="@id/blocNote"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/titleNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:maxLength="35"
+                android:maxLines="1"
+                android:text="@{title}"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/large_text_size"
+                app:layout_constraintBottom_toTopOf="@id/textNote"
+                app:layout_constraintStart_toEndOf="@id/imageNote"
+                app:layout_constraintTop_toTopOf="@id/blocNote"
+                tools:text="Title Note text text text text text text" />
+
+            <TextView
+                android:id="@+id/textNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif-light"
+                android:maxLength="57"
+                android:maxLines="1"
+                android:text="@{text}"
+                android:textColor="@color/colorDarkGray"
+                app:layout_constraintBottom_toBottomOf="@id/blocNote"
+                app:layout_constraintStart_toEndOf="@id/imageNote"
+                app:layout_constraintTop_toBottomOf="@id/titleNote"
+                tools:text="Text note text text text text text text text text text text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

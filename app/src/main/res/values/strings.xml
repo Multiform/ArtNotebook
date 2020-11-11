@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Art Notebook</string>
+    <string name="default_username">Username</string>
+    <string name="default_phone_number">+79998887766</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_input_phone_number">_ _ _ - _ _ _ - _ _ - _ _</string>
+    <string name="register_your_phone">Ваш телефон</string>
+    <string name="register_welcome">Добро пожаловать</string>
+    <string name="register_toast_empty_phone_number">Введите номер телефона</string>
+    <string name="register_input_code">_ _ _ _ _ _</string>
+    <string name="register_text_input_code">Введите код</string>
+    <string name="register_we_send_code">Мы отправили SMS с кодом подтверждения на ваш телефон</string>
+    <string name="settings_menu_change_name">Изменить имя</string>
+    <string name="settings_menu_exit">Выход</string>
+    <string name="appSettings">Settings</string>
+    <string name="settings_default_status">В сети</string>
+    <string name="settings_account">Аккаунт</string>
+    <string name="settings_btn_change_phone_number">Нажмите, чтобы изменить номер телефона</string>
+    <string name="settings_text_change_user_name">Нажмите, чтобы изменить имя пользователя</string>
+    <string name="settings_about_me">О себе</string>
+    <string name="settings_text_about_me">Напишите немного о себе</string>
+    <string name="settings_input_new_name">Имя</string>
+    <string name="settings_input_new_surname">Фамилия (необязательно)</string>
+    <string name="settings_toast_empty_name">Имя не может быть пустым</string>
+    <string name="toast_data_update">Данные обновлены</string>
+    <string name="settings_text_input_username">Имя пользователя</string>
+    <string name="settings_toast_empty_username">Имя пользователя не может быть пустым</string>
+    <string name="settings_input_bio">Напишите немного о себе</string>
+    <string name="settings_text_info_bio">Информация о вас</string>
+    <string name="settings_hint_preview_bio">Предпросмотр информации о вас</string>
+    <string name="notes_bloc_first">Блок 1</string>
+    <string name="button_add_note_in_block">Button add note in block</string>
+    <string name="hint_title_input">Заголовок...</string>
+    <string name="register_input_phone">Ведите ваш номер телефона</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.screens.register.RegisterCodeFragment">
+
+    <ImageView
+        android:id="@+id/register_code_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:src="@drawable/ic_announcement"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/register_text_input_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_text_input_code"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/large_text_size"
+        android:gravity="center"
+        android:layout_margin="@dimen/normal_margin"
+        app:layout_constraintTop_toBottomOf="@id/register_code_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/register_text_we_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_we_send_code"
+        style="@style/normalText"
+        android:textSize="@dimen/small_text_size"
+        android:gravity="center"
+        android:layout_margin="@dimen/normal_margin"
+        app:layout_constraintTop_toBottomOf="@id/register_text_input_code"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/registerInputCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:gravity="center"
+        android:textSize="@dimen/normal_text_size"
+        android:textColor="@color/colorBlack"
+        android:maxLines="1"
+        android:maxLength="6"
+        android:hint="@string/register_input_code"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:autofillHints=""
+        android:inputType="numberPassword"
+        app:layout_constraintTop_toBottomOf="@id/register_text_we_send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

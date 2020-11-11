@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "894156282098",
+    "firebase_url": "https://art-notebook-bf58c.firebaseio.com",
+    "project_id": "art-notebook-bf58c",
+    "storage_bucket": "art-notebook-bf58c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894156282098:android:ce3e89b738701600cdd86b",
+        "android_client_info": {
+          "package_name": "com.multiform.artnotebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894156282098-agjh29un4mm89r24imj6vkh2prm9pglt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVd8_06P-Rpw2rfUpx0iR2yn4dY7ivJNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894156282098-agjh29un4mm89r24imj6vkh2prm9pglt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

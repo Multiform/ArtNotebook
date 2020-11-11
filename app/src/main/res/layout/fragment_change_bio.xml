@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.settings.ChangeBioFragment">
+
+    <EditText
+        android:id="@+id/settings_input_new_bio"
+        style="@style/defaultEditText"
+        android:maxLength="50"
+        android:autofillHints=""
+        android:hint="@string/settings_input_bio"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/separatorSettingsBio1"
+        style="@style/separatorSettings"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="@dimen/normal_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_input_new_bio" />
+
+    <TextView
+        android:id="@+id/settings_text_info_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:gravity="center"
+        android:text="@string/settings_text_info_bio"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/small_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separatorSettingsBio1" />
+
+    <TextView
+        android:id="@+id/settings_text_new_bio"
+        style="@style/smallSettingsAccountText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:hint="@string/settings_hint_preview_bio"
+        android:textColorHint="@color/colorAccentDark"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_text_info_bio" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
